@@ -1,0 +1,14 @@
+{
+  "dashboard": {
+    "type": {
+      "heroes": "Helden",
+      "beekeepers": "Imker"
+    },
+    "title": "Wählen Sie Ihr Dashboard",
+    "language": {
+      "en": "EN",
+      "de": "DE",
+      "hu": "HU"
+    }
+  }
+}

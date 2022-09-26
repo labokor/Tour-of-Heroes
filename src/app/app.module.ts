@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { FeatureHeroesModule } from './feature-heroes/feature-heroes.module';
+import { DashboardModule } from '@app/dashboard/dashboard.module';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +13,8 @@ import { FeatureHeroesModule } from './feature-heroes/feature-heroes.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FeatureHeroesModule,
+    DashboardModule,
+    TranslocoRootModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

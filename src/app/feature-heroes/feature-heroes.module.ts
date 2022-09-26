@@ -36,8 +36,10 @@ import { HeroesComponent } from './components/heroes/heroes.component';
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
+    // passThruUnknownUrl: true -- because using HttpClient for transloco -> getTranslation
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
+      passThruUnknownUrl: true,
     }),
   ],
   providers: [],

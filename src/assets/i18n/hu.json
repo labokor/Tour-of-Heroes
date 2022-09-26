@@ -1,0 +1,14 @@
+{
+  "dashboard": {
+    "type": {
+      "heroes": "Hősök",
+      "beekeepers": "Méhészek"
+    },
+    "title": "Válassza ki az irányítópultját",
+    "language": {
+      "en": "EN",
+      "de": "DE",
+      "hu": "HU"
+    }
+  }
+}

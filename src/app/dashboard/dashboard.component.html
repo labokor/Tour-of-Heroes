@@ -1,0 +1,58 @@
+<header>
+  <h1>{{ "dashboard.title" | transloco }}</h1>
+  <form [formGroup]="languageForm">
+    <label (click)="switchLanguage(availableLanguages[0])">
+      <input
+        type="radio"
+        formControlName="language"
+        [value]="availableLanguages[0]"
+      />
+      {{ "dashboard.language.en" | transloco }}
+    </label>
+
+    <label (click)="switchLanguage(availableLanguages[1])">
+      <input
+        type="radio"
+        formControlName="language"
+        [value]="availableLanguages[1]"
+      />
+      {{ "dashboard.language.de" | transloco }}
+    </label>
+
+    <label (click)="switchLanguage(availableLanguages[2])">
+      <input
+        type="radio"
+        formControlName="language"
+        [value]="availableLanguages[2]"
+      />
+      {{ "dashboard.language.hu" | transloco }}
+    </label>
+  </form>
+</header>
+
+<form class="dashboard-form" [formGroup]="form">
+  <label>
+    <input
+      type="radio"
+      formControlName="dashboard"
+      [value]="DASHBOARD_TYPES[0]"
+    />
+    {{ "dashboard.type.heroes" | transloco }}
+  </label>
+
+  <label>
+    <input
+      type="radio"
+      formControlName="dashboard"
+      [value]="DASHBOARD_TYPES[1]"
+    />
+    {{ "dashboard.type.beekeepers" | transloco }}
+  </label>
+</form>
+
+<app-heroes-home
+  *ngIf="dashboard?.value === DASHBOARD_TYPES[0]"
+></app-heroes-home>
+<!--<app-beekepers-home-->
+<!--  *ngIf="dashboard?.value === DASHBOARD_TYPES[1]"-->
+<!--&gt;</app-beekepers-home>-->

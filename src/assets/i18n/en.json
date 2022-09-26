@@ -1,0 +1,14 @@
+{
+  "dashboard": {
+    "type": {
+      "heroes": "Heroes",
+      "beekeepers": "Beekeepers"
+    },
+    "title": "Choose your Dashboard",
+    "language": {
+      "en": "EN",
+      "de": "DE",
+      "hu": "HU"
+    }
+  }
+}
